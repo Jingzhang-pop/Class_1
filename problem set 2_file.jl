@@ -29,6 +29,11 @@ h(x) = x^3 - x - 1
 result_h = iterative_solver(h, 1.0, 0.0; ϵ = 1e-6, maxiter = 1000)
 println(result_h)
 
+# α: A scaling parameter for f(x) to control step size (default 1.0).
+#- Larger α can make the iterations faster but risk overshooting the solution.
+#- Smaller α can slow convergence but ensure stability for some functions.
+
+
 #problem 2
 
 using LinearAlgebra
